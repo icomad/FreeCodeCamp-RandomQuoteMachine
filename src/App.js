@@ -9,6 +9,7 @@ class App extends Component {
 
     this.state = {
       quotes: [],
+      themeText: 'Lights off',
     }
   }
 
@@ -18,8 +19,22 @@ class App extends Component {
       .catch(e => console.log(e))
   }
 
+  handleTheme = () => {
+    const body = document.querySelector('body');
+
+    if (body.classList.contains('t--light')) {
+      body.classList.remove('t--light');
+      body.classList.add('t--dark');
+      this.setState({ themeText: 'Lights on' });
+    } else {
+      body.classList.remove('t--dark');
+      body.classList.add('t--light');
+      this.setState({ themeText: 'Lights off' });
+    }
+  }
+
   render() {
-    const { quotes } = this.state
+    const { quotes, themeText } = this.state
     let QuoteComponent = quotes.length ? (
       <QuoteBox quotes={quotes} />
     ) :
@@ -30,6 +45,7 @@ class App extends Component {
       )
     return (
       <div className='container'>
+        <button className='theme-button' onClick={this.handleTheme}>{themeText}</button>
         {QuoteComponent}
       </div>
     );

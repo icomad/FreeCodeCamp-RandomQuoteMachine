@@ -9,3 +9,4 @@ const QuoteText = ({ quote, color }) => {
 }
 
 export default QuoteText;
+

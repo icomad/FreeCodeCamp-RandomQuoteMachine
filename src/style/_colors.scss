@@ -1,0 +1,49 @@
+$red-mat: #D32F2F;
+$blue-mat: #1976D2;
+$pink-mat: #C2185B;
+$amber-mat: #FFA000;
+$green-mat: #388E3C;
+$base-white: #fefefe;
+$base-black: #454545;
+
+.red-mat{ color: $red-mat; }
+.blue-mat{ color: $blue-mat; }
+.pink-mat{ color: $pink-mat; }
+.amber-mat{ color: $amber-mat; }
+.green-mat{ color: $green-mat; }
+
+.red-mat-bg{ background-color: $red-mat; }
+.blue-mat-bg{ background-color: $blue-mat; }
+.pink-mat-bg{ background-color: $pink-mat; }
+.amber-mat-bg{ background-color: $amber-mat; }
+.green-mat-bg{ background-color: $green-mat; }
+
+.t--light .red-mat-bg{ background-color: lighten($red-mat, 40%); }
+.t--light .blue-mat-bg{ background-color: lighten($blue-mat, 40%); }
+.t--light .pink-mat-bg{ background-color: lighten($pink-mat, 40%); }
+.t--light .amber-mat-bg{ background-color: lighten($amber-mat, 40%); }
+.t--light .green-mat-bg{ background-color: lighten($green-mat, 40%); }
+
+.t--light .red-mat-grad{ background: linear-gradient(to right, $base-white 0%,lighten($red-mat, 40%) 50%,$base-white 100%); }
+.t--light .blue-mat-grad{ background: linear-gradient(to right, $base-white 0%,lighten($blue-mat, 40%) 50%,$base-white 100%); }
+.t--light .pink-mat-grad{ background: linear-gradient(to right, $base-white 0%,lighten($pink-mat, 40%) 50%,$base-white 100%); }
+.t--light .amber-mat-grad{ background: linear-gradient(to right, $base-white 0%,lighten($amber-mat, 40%) 50%,$base-white 100%); }
+.t--light .green-mat-grad{ background: linear-gradient(to right, $base-white 0%,lighten($green-mat, 40%) 50%,$base-white 100%); }
+
+.t--dark .red-mat-bg{ background-color: darken($red-mat, 25%); }
+.t--dark .blue-mat-bg{ background-color: darken($blue-mat, 25%); }
+.t--dark .pink-mat-bg{ background-color: darken($pink-mat, 25%); }
+.t--dark .amber-mat-bg{ background-color: darken($amber-mat, 25%); }
+.t--dark .green-mat-bg{ background-color: darken($green-mat, 25%); }
+
+.t--dark .red-mat-grad{ background: linear-gradient(to right, $base-black 0%,darken($red-mat, 20%) 50%,$base-black 100%); }
+.t--dark .blue-mat-grad{ background: linear-gradient(to right, $base-black 0%,darken($blue-mat, 20%) 50%,$base-black 100%); }
+.t--dark .pink-mat-grad{ background: linear-gradient(to right, $base-black 0%,darken($pink-mat, 20%) 50%,$base-black 100%); }
+.t--dark .amber-mat-grad{ background: linear-gradient(to right, $base-black 0%,darken($amber-mat, 20%) 50%,$base-black 100%); }
+.t--dark .green-mat-grad{ background: linear-gradient(to right, $base-black 0%,darken($green-mat, 20%) 50%,$base-black 100%); }
+
+.red-mat-border{ border-color: $red-mat; }
+.blue-mat-border{ border-color: $blue-mat; }
+.pink-mat-border{ border-color: $pink-mat; }
+.amber-mat-border{ border-color: $amber-mat; }
+.green-mat-border{ border-color: $green-mat; }
